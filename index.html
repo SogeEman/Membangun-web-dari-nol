@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Menciptakan Link </title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            line-height:1.6;
+            margin: 50px;
+        }
+        .content-section {
+            margin-bottom: 40px;
+        }
+
+        .books-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap:5px
+
+            }
+    
+        .book-container img {
+            margin-bottom: 20px;
+
+        }
+
+        .image, .video {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .text-content {
+            margin: 20px;
+        }
+
+        .videos-container {
+            display: flex;
+            flex-direction:column-reverse;
+            justify-content: center;
+            gap: 20px;
+        }
+        .videos-container video {
+            width: 45%; /* Adjust the width as needed */
+        }
+        @media (max-width: 600px) {
+            .books-container, .videos-container {
+                flex-direction: column-reverse;
+            }
+            .books-container img, .videos-container video {
+                width: 100%; /* Full width for smaller screens */
+            }
+        }
+
+        .books-container img {
+            width: 200px; /* Adjust the width as needed */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid transparent;
+        }
+        .books-container img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 10px rgba(239, 5, 5, 0.919);
+            border: 10px solid #30f312;
+        }
+        .marquee-text {
+            width: 100%;
+            color: rgb(128, 0, 0);
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        .marquee-text span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 10s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('Background-Image.jpg'); /* Add your background image path here */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        .content-section {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background for readability */
+            border-radius: 10px;
+            text-align: center;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            margin-bottom: 20px;
+            border: 2px solid #000;
+        }
+        .video-container video {
+            width: 100%;
+            height: auto;
+        }
+        .marquee-text {
+            width: 100%;
+            color: rgb(128, 0, 0);
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        .marquee-text span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 10s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .title {
+            font-size: 100px;
+            font-weight: bold;
+            color: #ad1111;
+            text-transform: uppercase;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="title">MIKAEL HTML</div> <!-- Title displayed above the content -->
+
+
+    <div class="books-container content-section">
+        <a href="https://rauterberg.employee.id.tue.nl/lecturenotes/DDM110%20CAS/Kant-1781%20Critique%20of%20Pure%20Reason.pdf" target = "_blank">
+            <img src="Kant.jpg" alt="Book 1" width="90"> 
+        </a>
+            <a href= "https://faculty.washington.edu/conormw/Teaching/Files/PhilMath/Winter_2017/Readings/Kant-Prolegomena.pdf" target = "_blank">
+           
+                <img src="Kant 2.jpg" alt="Book 2" width = "80">
+        </a>
+        <a href = " https://www.bard.edu/library/arendt/pdfs/bc_Arendt_Kant_CritiquePracticalReason.pdf" target= "_blank">
+            <img src="Critique of Practical reason.jpg" alt="Book 3" width = "60">
+        </a>
+       
+        <!-- Add more book images as needed -->
+    </div>
+    <div class="text-content content-section">
+        <p>
+            I have thoroughly taken care of logical clarity, which is
+            essential to my purpose; but that led to my not satisfying the
+            demand for intuitive clarity—a less stringent demand, but
+            still a fair one—for reasons having to do with my particular
+            circumstances, ·as I’ll now explain·. In the course of my
+            work I have been almost constantly unsure what to do about
+            examples and illustrations. It always seemed to me that I
+            needed them, and my first draft contained them, each in
+            its proper place. But when I took in how big a task I had
+            tackled, and how many topics I would have to deal with, I
+            realized that it was going to take a big book just to cover all
+            this in an unadorned, merely academic manner. Including
+            examples and illustrations would have made it even bigger,
+            and I thought that was a bad idea. Examples etc. would
+            have been necessary if my aim had been to succeed with a
+            general readership; but there was in any case no way I could
+            have fitted my work for that kind of public. Examples etc.
+            would be nice for expert metaphysicians too, though even
+            with them there might be disadvantages; and anyway they
+            don’t need such helps in the way that general readers would;
+            so the concern about the book’s length carried the day. Critique of Pure Reason, P. 5
+        </p>
+    </div>
+
+    <div class="video content-section">
+        <video width="500" controls>
+            <source src="Basic HTML.mp4" type="video/mp4">
+        </video>
+<div class = "text content content-section">
+<P> 
+
+Dua video ini menjelaskan struktur dasar HTML dan bagaimana mengaplikasikan dasar html ke dalam contoh. 
+
+</P>
+
+
+</div>
+        <div class=" video content-section">
+       <video width = "400" controls>
+         <source src = "Contoh html.mp4" type = "video/mp4"
+       
+       </video>
+
+        </div>
+    
+        <div class="marquee-text">
+            <span>JANGAN MELEWATKAN VIDEO SELANJUTNYA TENTANG APLIKASI HTML</span>
+        </div>
+    </div>
+
+</body>
+</html>
